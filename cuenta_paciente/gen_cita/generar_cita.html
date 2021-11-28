@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <title>Generar cita</title>
+</head>
+<body>
+    <br>
+    <center><h2>Generar cita</h2></center>
+    <br>
+    <form action="generar_cita.php" class="form-group" method="post">
+        <div class="container">
+            <label>Policlínica:</label>
+            <select class="form-control" name="policlinica" required>
+                <option value="0"></option>
+                <option value="1">Policlínica Manuel María Valdés</option>
+                <option value="2">Policlínica Alejandro De La Guardia</option>
+                <option value="3">Policlínica Dr. Carlos N. Brin</option>
+                <option value="4">Policlínica Manuel Ferrer Valdés</option>
+            </select>
+            <br>
+            <label>Especialidad:</label>
+            <select class="form-control" name="especialidad" required>
+                <option value="0"></option>
+                <option value="1">Anestesiología</option>
+                <option value="2">Anatomía Patológica</option>
+                <option value="3">Cardiología</option>
+                <option value="4">Cardiología Intervencionista</option>
+                <option value="5">Cirugía Pediátrica</option>
+                <option value="6">Cirugía General</option>
+                <option value="7">Cirugía Plástica</option>
+                <option value="8">Cirugía Vascular</option>
+                <option value="9">Dermatología</option>
+                <option value="10">Endoscopia</option>
+                <option value="11">Gastroenterología</option>
+                <option value="12">Ginecología</option>
+                <option value="13">Hematología</option>
+                <option value="14">Infectología</option>
+                <option value="15">Rehabilitación</option>
+                <option value="16">Medicina Interna</option>
+                <option value="17">Nefrología</option>
+                <option value="18">Neurología</option>
+                <option value="19">Neumología</option>
+                <option value="20">Oftalmogía</option>
+                <option value="21">Ortopedia</option>
+                <option value="22">Otorrinolaringología</option>
+                <option value="23">Patología Clínica</option>
+                <option value="24">Pediatría</option>
+                <option value="25">Psiquiatría General</option>
+                <option value="26">Radiología e Imagen</option>
+                <option value="27">Urología</option>
+                <option value="28">Neumología</option>
+                <option value="29">Cirugía Oncológica</option>
+                <option value="30">Oncología</option>
+                <option value="31">Oncología Pediátrica</option>
+                <option value="32">Radio-Oncología</option>
+            </select>
+            <br>
+            <label>Seleccione la fecha deseada:</label>
+            <input type="date" name="fechaCita" class="form-control" required>
+            <br>
+            <label>Seleccione la hora deseada:</label>
+            <input type="time" name="horaCita" class="form-control" min="08:00" max="17:00" step="3600" required>
+            <br>
+            <input type="submit" value="Enviar" class="btn btn-primary" role="button">
+            </div>
+    </form>
+</body>
+</html>
