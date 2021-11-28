@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Registro de usuario</title>
+</head>
+<body>
+    <center><h2>Registro de Paciente</h2></center>
+    <br>
+    <br>
+    <form class="container" action="process_signup.php" method="post">
+        <div class="form-group">
+        <label>Nombre completo:</label>
+        <input type="text" name="nombre_paciente" class="form-control" required placeholder="Introduzca su primer nombre y apellido">
+        <br>
+        <label>Cédula:</label>
+        <input type="text" name="idPaciente" class="form-control" required placeholder="Introduzca su número de cédula">
+        <br>
+        <label>Teléfono:</label>
+        <input type="text" name="telefono_paciente" class="form-control" required placeholder="Introduzca su número de teléfono o celular">
+        <br>
+        <label>Póliza de seguro:</label>
+        <input type="text" name="poliza_seg" class="form-control" required placeholder="Introduzca su número de póliza de seguro">
+        <br>
+        <label>Email:</label>
+        <input type="text" name="correo_paciente" class="form-control" required placeholder="Introduzca su correo electrónico">
+        <br>
+        <label>Fecha de nacimiento:</label>
+        <input type="date" name="fecha_nacto" class="form-control" required placeholder="Introduzca su fecha de nacimiento">
+        <br>
+        <input type="submit" value="Enviar" class="btn btn-primary" role="button">
+        <a href="../index.html" class="btn btn-primary" role="button">Cancelar</a>
+    </div>
+    </form>
+</body>
+</html>

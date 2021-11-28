@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Inicio de sesión</title>
+</head>
+<body>
+    <center><h2>Inicio de sesión</h2></center>
+    <br>
+    <br>
+    <form class="container" action="login_paciente.php" method="post">
+        <div class="form-group">
+            <label>Cédula:</label>
+            <input type="text" name="idPaciente" class="form-control" required placeholder="Introduca su número de cédula">
+            <br>
+            <label>Contraseña:</label>
+            <input type="text" name="passPaciente" class="form-control" required placeholder="Introduzca su contraseña">
+            <br>
+            <input type="submit" value="Enviar" class="btn btn-primary" role="button">
+            <br>
+            <br>
+            <a href="../sign_up/signup_paciente.html" class="btn btn-primary" role="button">Crear cuenta</a>
+        </div>
+    </form>
+</body>
+</html>

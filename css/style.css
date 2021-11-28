@@ -1,0 +1,10 @@
+.enlaces{
+    float:right;
+    text-decoration:none;
+    padding: 2px 7px 2px 7px;
+    color: black;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: right;
+    overflow: hidden;
+}
