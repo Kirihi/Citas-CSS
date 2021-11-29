@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <title>Cancelar cita</title>
+</head>
+<body>
+    <br>
+    <center><h2>Cancelar cita</h2></center>
+    <br>
+    <form class="form-group" action="cancelar_cita.php" method="post">
+        <div class="container">
+            <label>No. de cita:</label>
+            <input type="number" name="idCita" class="form-control" required placeholder="Introduzca el número de cita a cancelar">
+            <br>
+            <input type="submit" value="Enviar" class="btn btn-primary" role="button">
+            <a href="../cuenta.php" class="btn btn-primary" role="button">Cancelar</a>
+        </div>
+    </form>
+</body>
+</html>
