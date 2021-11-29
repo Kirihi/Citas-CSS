@@ -10,8 +10,8 @@ $horaCita = $_POST['horaCita'];
 
 include("../../connect.php");
 
-$sql = "insert into Citas values ('$policlinica', '$especialidad', '$fechaCita', '$horaCita', '$cedula')";
-$stmt = sqlsrv_connect($conn, $sql);
+$sql = "insert into Citas (policlinica, especialidad, fechaCita, horaCita, idPaciente) values ('$policlinica', '$especialidad', '$fechaCita', '$horaCita', '$cedula')";
+$stmt = sqlsrv_query($conn, $sql);
 
 if($stmt){
     header("Location: ../cuenta.php");
