@@ -21,6 +21,36 @@ if($_SESSION['idPaciente']){
     <a href="../index.html" class="enlaces">Cerrar sesión</a>
 </head>
 <body>
-    
+<br>
+<br>
+    <table class="container">
+    <tr>
+    <th>No. de Cita</th>
+    <th>Policlinica</th>
+    <th>Especilidad</th>
+    <th>Fecha</th>
+    <th>Hora</th>
+        </tr>
+        <?php
+            include("../connect.php");
+        
+            $sql = "select * from Citas where idPaciente = '$cedula'";
+            $stmt = sqlsrv_query($conn, $sql);
+
+            while($show = sqlsrv_fetch_array($stmt)){
+                $fecha = $show['fechaCita'] -> format('d/m/Y');
+                $hora = $show['horaCita'] -> format('H:i');
+        ?>
+    <tr>
+            <td><?= $show['idCita'] ?></td>
+            <td><?= $show['policlinica'] ?></td>
+            <td><?= $show['especialidad'] ?></td>
+            <td><?= $fecha ?></td>
+            <td><?= $hora ?></td>
+        </tr>
+    <?php
+    }
+    ?>
+    </table>
 </body>
 </html>
