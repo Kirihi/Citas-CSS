@@ -27,7 +27,7 @@ if($_SESSION['idPaciente']){
     <tr>
     <th>No. de Cita</th>
     <th>Policlinica</th>
-    <th>Especilidad</th>
+    <th>Especialidad</th>
     <th>Fecha</th>
     <th>Hora</th>
         </tr>
