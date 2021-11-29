@@ -30,7 +30,7 @@ if($_SESSION['idPaciente']){
     <th>Especialidad</th>
     <th>Fecha</th>
     <th>Hora</th>
-        </tr>
+    </tr>
         <?php
             include("../connect.php");
         
@@ -39,7 +39,7 @@ if($_SESSION['idPaciente']){
 
             while($show = sqlsrv_fetch_array($stmt)){
         ?>
-    <tr>
+        <tr>
             <td><?= $show['idCita'] ?></td>
             <td><?= $show['policlinica'] ?></td>
             <td><?= $show['especialidad'] ?></td>
