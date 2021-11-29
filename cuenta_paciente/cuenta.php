@@ -15,8 +15,8 @@ if($_SESSION['idPaciente']){
     <title>Cuenta</title>
     <nav class="menu">
         <a href="gen_cita/generar_cita.html">Generar cita</a>
-        <a href="#">Reprogramar cita</a>
-        <a href="#">Cancelar cita</a>
+        <a href="reprog_cita/reprogramar_cita.html">Reprogramar cita</a>
+        <a href="cancel_cita/cancelar_cita.html">Cancelar cita</a>
     </nav>
     <a href="../index.html" class="enlaces">Cerrar sesión</a>
 </head>
