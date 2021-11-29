@@ -21,6 +21,6 @@ if($_SESSION['idPaciente']){
     <a href="../index.html" class="enlaces">Cerrar sesión</a>
 </head>
 <body>
-// comentario
+
 </body>
 </html>
