@@ -38,15 +38,13 @@ if($_SESSION['idPaciente']){
             $stmt = sqlsrv_query($conn, $sql);
 
             while($show = sqlsrv_fetch_array($stmt)){
-                $fecha = $show['fechaCita'] -> format('d/m/Y');
-                $hora = $show['horaCita'] -> format('H:i');
         ?>
     <tr>
             <td><?= $show['idCita'] ?></td>
             <td><?= $show['policlinica'] ?></td>
             <td><?= $show['especialidad'] ?></td>
-            <td><?= $fecha ?></td>
-            <td><?= $hora ?></td>
+            <td><?= $show['fechaCita'] -> format('d/m/Y') ?></td>
+            <td><?= $show['horaCita'] -> format('H:i') ?></td>
         </tr>
     <?php
     }
