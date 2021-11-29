@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta de médico</title>
+</head>
+<body>
+    <form class="form-group" action="signup_medico.php" method="post">
+        <div class="container">
+            <label>Nombre:</label>
+            <input type="text" class="form-control" name="nombreMedico" required>
+            <br>
+            <label>Cédula:</label>
+            <input type="text" class="form-control" name="idMedico" required>
+            <br>
+            <label>Especialidad:</label>
+            <select class="form-control" name="especialidad" required>
+                <option value="0"></option>
+                <option value="Anestesiologia">Anestesiología</option>
+                <option value="Anatomia Patologica">Anatomía Patológica</option>
+                <option value="Cardiologia">Cardiología</option>
+                <option value="Cardiologia Intervencionista">Cardiología Intervencionista</option>
+                <option value="Cirugia Pediatrica">Cirugía Pediátrica</option>
+                <option value="Cirugia General">Cirugía General</option>
+                <option value="Cirugia Plastica">Cirugía Plástica</option>
+                <option value="Cirugia Vascular">Cirugía Vascular</option>
+                <option value="Dermatologia">Dermatología</option>
+                <option value="Endoscopia">Endoscopia</option>
+                <option value="Gastroenterologia">Gastroenterología</option>
+                <option value="Ginecologia">Ginecología</option>
+                <option value="Hematologia">Hematología</option>
+                <option value="Infectologia">Infectología</option>
+                <option value="Rehabilitacion">Rehabilitación</option>
+                <option value="Medicina Interna">Medicina Interna</option>
+                <option value="Nefrologia">Nefrología</option>
+                <option value="Neurologia">Neurología</option>
+                <option value="Neumologia">Neumología</option>
+                <option value="Oftalmogia">Oftalmogía</option>
+                <option value="Ortopedia">Ortopedia</option>
+                <option value="Otorrinolaringologia">Otorrinolaringología</option>
+                <option value="Patologia Clinica">Patología Clínica</option>
+                <option value="Pediatria">Pediatría</option>
+                <option value="Psiquiatria General">Psiquiatría General</option>
+                <option value="Radiologia">Radiología</option>
+                <option value="Urologia">Urología</option>
+                <option value="Cirugia Oncologica">Cirugía Oncológica</option>
+                <option value="Oncologia">Oncología</option>
+                <option value="Oncologia Pediatrica">Oncología Pediátrica</option>
+                <option value="Radio-Oncologia">Radio-Oncología</option>
+            </select>
+            <br>
+            <label>Teléfono:</label>
+            <input type="text" class="form-control" name="telefonoMedico" required>
+            <br>
+            <label>Email:</label>
+            <input type="text" class="form-control" name="correoMedico" required>
+            <br>
+            <label>Contraseña:</label>
+            <input type="text" class="form-control" name="passMedico" required>
+            <br>
+            <input type="submit" value="Enviar" class="btn btn-primary" role="button">
+            <a href="cuenta_admin.php" class="btn btn-primary" role="button">Cancelar</a>
+            </div>
+    </form>
+</body>
+</html>
