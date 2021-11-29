@@ -15,6 +15,6 @@ if($stmt){
 }
 else{
     echo "Su cita no ha podido ser reprogramada. Intentelo nuevamente.";
-    header("refresh:5;url:reprogramar_cita.html");
+    header("Refresh:5;url:reprogramar_cita.html");
 }
 ?>
