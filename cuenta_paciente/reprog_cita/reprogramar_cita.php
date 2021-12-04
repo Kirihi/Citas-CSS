@@ -7,10 +7,16 @@ $horaCita = $_POST['horaCita'];
 
 include("../../connect.php");
 
-$sql = "update Citas set fechaCita = '$fechaCita' or horaCita = '$horaCita' where idCita = '$idCita'";
-$stmt = sqlsrv_query($conn, $sql);
+if(isset($_POST['fechaCita'])){
+    $sql = "update Citas set fechaCita = '$fechaCita' where idCita = '$idCita'";
+    $stmt = sqlsrv_query($conn, $sql);
+}
+else if (isset($_POST['horaCita'])){
+    $sql2 = "update Citas set horaCita = '$horaCita' where idCita = '$idCita'";
+    $stmt2 = sqlsrv_query($conn, $sql2);
+}
 
-if($stmt){
+if($stmt || $stmt2){
     header("Location: ../cuenta.php");
 }
 else{
