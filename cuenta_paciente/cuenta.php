@@ -3,6 +3,7 @@ session_start();
 if($_SESSION['idPaciente']){
     $cedula = $_SESSION['idPaciente'];
 }
+include("../connect.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +22,19 @@ if($_SESSION['idPaciente']){
     <a href="../index.html" class="enlaces">Cerrar sesión</a>
 </head>
 <body>
+<?php
+
+$sql2 = "select nombre from Pacientes where idPaciente = '$cedula'";
+$stmt2 = sqlsrv_query($conn, $sql2);
+
+while($show2 = sqlsrv_fetch_array($stmt2)){
+?>
 <br>
+<br>
+<center><h2>Bienvenido, <?= $show2['nombre']?></h2></center>
+<?php
+}
+?>
 <br>
     <table class="container">
     <tr>
@@ -32,7 +45,6 @@ if($_SESSION['idPaciente']){
     <th>Hora</th>
     </tr>
         <?php
-            include("../connect.php");
         
             $sql = "select * from Citas where idPaciente = '$cedula'";
             $stmt = sqlsrv_query($conn, $sql);
