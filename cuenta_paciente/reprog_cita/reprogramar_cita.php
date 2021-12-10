@@ -11,7 +11,7 @@ if(isset($_POST['fechaCita'])){
     $sql = "update Citas set fechaCita = '$fechaCita' where idCita = '$idCita'";
     $stmt = sqlsrv_query($conn, $sql);
 }
-else if (isset($_POST['horaCita'])){
+if (isset($_POST['horaCita'])){
     $sql2 = "update Citas set horaCita = '$horaCita' where idCita = '$idCita'";
     $stmt2 = sqlsrv_query($conn, $sql2);
 }
