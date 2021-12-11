@@ -1,6 +1,6 @@
 <?php
-$serverName = "localhost\sqlexpress";
+$serverName = "localhost";
 
-$connectionInfo = array("Database"=>"Citas_CSS", "UID"=>"sa", "PWD"=>"Kirigaya4");
+$connectionInfo = array("Database"=>"citas_css");
 $conn = mysqli_connect($serverName, $connectionInfo);
 ?>
