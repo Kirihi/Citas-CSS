@@ -55,8 +55,8 @@ while($show2 = mysqli_fetch_array($stmt2)){
             <td><?= $show['idCita'] ?></td>
             <td><?= $show['policlinica'] ?></td>
             <td><?= $show['especialidad'] ?></td>
-            <td><?= $show['fechaCita'] -> format('d/m/Y') ?></td>
-            <td><?= $show['horaCita'] -> format('H:i') ?></td>
+            <td><?= $show['fechaCita'] -> format ('Y-m-d') ?></td>
+            <td><?= $show['horaCita'] -> format ('H:i') ?></td>
         </tr>
     <?php
     }

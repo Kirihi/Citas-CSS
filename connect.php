@@ -4,5 +4,5 @@ $serverUser = "root";
 $serverPswd = "Kirigaya4";
 $serverDB = "citas_css";
 
-$conn = mysqli_connect($serverName, $serverDB, $serverUser, $serverPswd);
+$conn = mysqli_connect($serverName, $serverUser, $serverPswd, $serverDB);
 ?>
