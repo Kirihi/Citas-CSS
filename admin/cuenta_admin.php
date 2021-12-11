@@ -18,6 +18,8 @@ if (isset($_SESSION['userAdmin'])){
     <a href="cerrar_sesion.php" class="enlaces">Cerrar sesión</a>
 </head>
 <body>
+    <br>
+    <br>
     <?php
     include("../connect.php");
 
@@ -30,5 +32,6 @@ if (isset($_SESSION['userAdmin'])){
     <?php
     }
     ?>
+    <br>
 </body>
 </html>
