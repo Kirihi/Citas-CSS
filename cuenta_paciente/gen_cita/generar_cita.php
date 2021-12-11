@@ -11,7 +11,7 @@ $horaCita = $_POST['horaCita'];
 include("../../connect.php");
 
 $sql = "insert into Citas (policlinica, especialidad, fechaCita, horaCita, idPaciente) values ('$policlinica', '$especialidad', '$fechaCita', '$horaCita', '$cedula')";
-$stmt = mysqli_query($conn, $sql);
+$stmt = sqlsrv_query($conn, $sql);
 
 if($stmt){
     header("Location: ../cuenta.php");

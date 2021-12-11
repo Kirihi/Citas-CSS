@@ -9,11 +9,11 @@ include("../../connect.php");
 
 if(isset($_POST['fechaCita'])){
     $sql = "update Citas set fechaCita = '$fechaCita' where idCita = '$idCita'";
-    $stmt = mysqli_query($conn, $sql);
+    $stmt = sqlsrv_query($conn, $sql);
 }
 if (isset($_POST['horaCita'])){
     $sql2 = "update Citas set horaCita = '$horaCita' where idCita = '$idCita'";
-    $stmt2 = mysqli_query($conn, $sql2);
+    $stmt2 = sqlsrv_query($conn, $sql2);
 }
 
 if($stmt || $stmt2){

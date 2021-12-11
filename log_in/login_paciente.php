@@ -5,7 +5,7 @@ $idPaciente = $_POST['idPaciente'];
 $passPaciente = $_POST['passPaciente'];
 
 $sql = "select idPaciente, passPaciente from Pacientes where idPaciente = '$idPaciente' and passPaciente = '$passPaciente'";
-$stmt = mysqli_query($conn, $sql);
+$stmt = sqlsrv_query($conn, $sql);
 
 session_start();
 if (isset($_POST['idPaciente'])){

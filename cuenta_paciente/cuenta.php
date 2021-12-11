@@ -25,9 +25,9 @@ include("../connect.php");
 <?php
 
 $sql2 = "select nombre from Pacientes where idPaciente = '$cedula'";
-$stmt2 = mysqli_query($conn, $sql2);
+$stmt2 = sqlsrv_query($conn, $sql2);
 
-while($show2 = mysqli_fetch_array($stmt2)){
+while($show2 = sqlsrv_fetch_array($stmt2)){
 ?>
 <br>
 <br>
@@ -47,9 +47,9 @@ while($show2 = mysqli_fetch_array($stmt2)){
         <?php
         
             $sql = "select * from Citas where idPaciente = '$cedula'";
-            $stmt = mysqli_query($conn, $sql);
+            $stmt = sqlsrv_query($conn, $sql);
 
-            while($show = mysqli_fetch_array($stmt)){
+            while($show = sqlsrv_fetch_array($stmt)){
         ?>
         <tr>
             <td><?= $show['idCita'] ?></td>
