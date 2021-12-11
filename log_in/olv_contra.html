@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación de contraseña</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <center><h2>Recuperación de contraseña</h2></center>
+    <br>
+    <p>Ingrese su número de identificación para recuperar su contraseña:</p>
+    <br>
+    <form class="form-group" action="reset_pass.php" method="post">
+        <div class="container"></div>
+        <br>
+        <label>Identificación:</label>
+        <input type="email" name="idPaciente" class="form-control" required placeholder="Ingrese su correo electrónico">
+        <br>
+        <label>Nueva contraseña:</label>
+        <input type="password" name="pass" class="form-control" required placeholder="Ingrese su nueva contraseña">
+        <br>
+        <input type="submit" value="Enviar" class="btn btn-primary" role="button">
+        <a href="login_paciente.html" class="btn btn-primary" role="button">Cancelar</a>
+        </div>
+    </form>
+</body>
+</html>
