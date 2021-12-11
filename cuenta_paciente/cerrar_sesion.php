@@ -14,4 +14,4 @@ session_destroy();
     <center><p>Has cerrado la sesión.</p></center>
 </body>
 </html>
-<? header("refresh:5;url:../index.html"); ?>
+<? header("Refresh:5; url:../index.html"); ?>
