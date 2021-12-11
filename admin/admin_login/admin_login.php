@@ -5,7 +5,7 @@ $pass = $_POST['admin_pass'];
 include("../../connect.php");
 
 $sql = "select emailAdmin, passAdmin from [Admin] where emailAdmin = '$email' and passAdmin = '$pass'";
-$stmt = sqlsrv_query($conn, $sql);
+$stmt = mysqli_query($conn, $sql);
 
 session_start();
 if (isset($_POST['admin_email'])){

@@ -10,7 +10,7 @@ $correo_paciente = $_POST['correo_paciente'];
 $fecha_nacto = $_POST['fecha_nacto'];
 
 $sql = "insert into Pacientes values ('$idPaciente', '$passPaciente', '$nombre_paciente', '$telefono_paciente', '$poliza_seg', '$correo_paciente', '$fecha_nacto')";
-$stmt = sqlsrv_query($conn, $sql);
+$stmt = mysqli_query($conn, $sql);
 
 if($stmt){
     header("Location: ../log_in/login_paciente.html");

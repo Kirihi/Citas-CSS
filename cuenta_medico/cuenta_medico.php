@@ -21,9 +21,9 @@ session_start();
             include("../connect.php");
         
             $sql = "select Citas.idCita, Citas.fechaCita, Citas.horaCita from Citas, Medico where fechaCita = cast(getdate() as date) and Citas.especialidad = Medico.Cargo";
-            $stmt = sqlsrv_query($conn, $sql);
+            $stmt = mysqli_query($conn, $sql);
 
-            while($show = sqlsrv_fetch_array($stmt)){
+            while($show = mysqli_fetch_array($stmt)){
         ?>
         <tr>
             <td><?= $show['idCita'] ?></td>

@@ -11,7 +11,7 @@ $correoMedico = $_POST['correoMedico'];
 include("../../connect.php");
 
 $sql = "insert into Medico values ('$idMedico', '$passMedico', '$nombreMedico', '$telefonoMedico', '$especialidad', '$correoMedico')";
-$stmt = sqlsrv_query($conn, $sql);
+$stmt = mysqli_query($conn, $sql);
 
 if($stmt){
     header("Location: ../cuenta_admin.php");

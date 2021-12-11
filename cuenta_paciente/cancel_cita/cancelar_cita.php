@@ -9,7 +9,7 @@ $idCita = $_POST['idCita'];
 include("../../connect.php");
 
 $sql = "delete from Citas where idCita = '$idCita' and idPaciente = '$cedula'";
-$stmt = sqlsrv_query($conn, $sql);
+$stmt = mysqli_query($conn, $sql);
 
 if($stmt){
     header("Location: ../cuenta.php");
